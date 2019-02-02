@@ -1,0 +1,42 @@
+// head {
+@import "../../../../../modules-vendor/fed/fontawesome/-/less/main.less";
+
+@__nodeId__: ~"ewma_components_ui__main";
+// }
+
+.@{__nodeId__} {
+
+    .block() {
+        float: left;
+        margin: 10px;
+    }
+
+    > .cats {
+        .block;
+        border-radius: 5px;
+        padding: 5px 0;
+        min-width: 250px;
+        box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15), 1px 1px 4px rgba(0, 0, 0, 0.3);
+
+        .ui-resizable-handle {
+            width: 16px;
+            right: -16px;
+
+            &:hover {
+                //background-color: rgba(0, 0, 0, 0.3);
+            }
+        }
+    }
+
+    > .components {
+        .block;
+        padding: 10px 0;
+        border-radius: 5px;
+        min-width: 150px;
+        box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15), 1px 1px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    > .component {
+        .block;
+    }
+}

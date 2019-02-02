@@ -1,0 +1,54 @@
+// head {
+@__nodeId__: ~"ewma_components_ui_component__main";
+// }
+
+.@{__nodeId__} {
+
+    > .instances {
+
+        > .instance {
+            position: relative;
+            margin: 10px 0px;
+
+            > .cp {
+
+                > .name {
+                    padding: 5px 0;
+                    font-weight: bold;
+                }
+
+                > .buttons {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    display: none;
+
+                    > .button {
+                        cursor: pointer;
+                        padding: 5px;
+                        color: #A0A0A0;
+
+                        .icon {
+                            font-size: 14px;
+                        }
+
+                        &:hover {
+                            color: #606060;
+                        }
+                    }
+                }
+
+                &:hover {
+
+                    > .buttons {
+                        display: block;
+                    }
+                }
+            }
+
+            > .handler {
+                padding: 1px;
+            }
+        }
+    }
+}

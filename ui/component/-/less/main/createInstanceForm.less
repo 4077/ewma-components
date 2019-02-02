@@ -1,0 +1,64 @@
+// head {
+@import "../../../../../../css/std/-/less/main.less";
+
+@__nodeId__: ~"ewma_components_ui_component__main_createInstanceForm";
+// }
+
+.@{__nodeId__} {
+    display: flex;
+    flex-direction: column;
+    padding: 1px;
+
+    > .row {
+        margin: 10px 10px 0;
+
+        input {
+            box-sizing: border-box;
+            padding: 5px;
+            box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3) inset;
+            background-color: #EEEEEE;
+            width: 100%;
+
+            &.free {
+
+            }
+
+            &.used {
+                background-color: #FFA9AC;
+            }
+        }
+
+        .save_button {
+            .__button;
+            .blue;
+            .small;
+
+            float: right;
+
+            margin-bottom: 10px;
+            margin-right: 0;
+
+            &.disabled {
+                ._() {
+                    .__gradient(#F9F9F9, #F9F9F9);
+                    .__radius(3px);
+                    .__border(#DDDDDD);
+
+                    cursor: default;
+                    color: #909090;
+                }
+
+                ._;
+
+                &.hover, &:hover {
+                    ._;
+                }
+
+                &:active {
+                    left: 0;
+                    top: 0;
+                }
+            }
+        }
+    }
+}
